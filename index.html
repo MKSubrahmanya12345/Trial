@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Containers with Persistence</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f7f7f7;
+    }
+    #controls {
+      margin-bottom: 20px;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .container-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .container-header input {
+      border: none;
+      background: none;
+      font-size: 18px;
+      font-weight: bold;
+      outline: none;
+      width: 80%;
+    }
+    .todo-list input {
+      margin-right: 10px;
+    }
+    .add-todo {
+      margin-top: 10px;
+    }
+    .controls button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <button id="add-container">Add Container</button>
+    <button id="undo-delete" disabled>Undo Delete</button>
+  </div>
+  <div id="container-area"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
